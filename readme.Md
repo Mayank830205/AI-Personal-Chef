@@ -135,6 +135,10 @@ AI & Data Science Enthusiast
 
 ---
 
+## 🌐 Live Demo
+
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live_App-red?logo=streamlit)](https://ai-personal-chef-aetbekdijpuej5kpgdjq6v.streamlit.app/)
+
 ## ⭐ Support
 
 If you found this project useful, consider giving it a ⭐ on GitHub!
