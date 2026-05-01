@@ -1,139 +1,140 @@
-👨‍🍳 AI Personal Chef & Meal Planner
-Prompt Engineering & Persona-Based LLM Application
-📌 Project Overview
+# 👨‍🍳 AI Personal Chef & Meal Planner
 
-AI Personal Chef & Meal Planner is a Streamlit-based web application powered by Google Gemini (2.5 Flash) that generates creative, zero-waste recipes strictly based on available ingredients and dietary restrictions.
+**Prompt Engineering & Persona-Based LLM Application**
 
-This project demonstrates:
+---
 
-Prompt Engineering
+## 📌 Project Overview
 
-Persona Design
+AI Personal Chef & Meal Planner is a **Streamlit-based web application** powered by **Google Gemini 2.5 Flash** that generates creative, zero-waste recipes using only the ingredients provided by the user.
 
-Constraint-based generation
+The system is designed to strictly follow constraints, ensuring **no extra ingredients are hallucinated** while respecting dietary preferences.
 
-Few-shot learning
+---
 
-LLM output structuring
+## 🎯 Objective
 
-UI customization (Dark-mode premium design)
+Develop an LLM-powered assistant that:
 
-🎯 Objective
+* Generates recipes using only user-provided ingredients
+* Adheres to dietary restrictions
+* Prevents hallucination of additional ingredients
+* Produces structured and consistent outputs
+* Maintains a defined chef persona throughout responses
 
-Build an LLM-powered assistant that:
+---
 
-Generates recipes only from user-provided ingredients
+## 🧠 Prompt Engineering Design
 
-Respects dietary restrictions
+### 👤 Persona: Chef Remy
 
-Avoids hallucinating extra ingredients
+A creative yet resourceful gourmet chef who:
 
-Follows a strict structured output format
+* Focuses on reducing food waste
+* Uses only available ingredients
+* Allows basic staples (salt, oil, pepper, water)
+* Maintains an enthusiastic and engaging tone
 
-Maintains a consistent enthusiastic chef persona
+---
 
-🧠 Prompt Engineering Design
-👤 Persona: Chef Remy
+### 🏗 Prompt Architecture
 
-A Creative but Frugal Gourmet Chef who:
+#### 🔹 Role-Based Prompt
 
-Is passionate about reducing food waste
+Defines the assistant identity:
 
-Uses only provided ingredients
+> “You are Chef Remy…”
 
-Allows only basic staples (salt, oil, pepper, water)
+#### 🔹 Constraint-Based Input
 
-Maintains enthusiastic, resourceful tone
+* Accepts ingredient list and dietary restrictions
+* Enforces strict ingredient usage
 
-🏗 Prompt Architecture
+#### 🔹 Few-Shot Learning
 
-Role-Based Prompt
+* Includes structured recipe examples
+* Guides output format and consistency
 
-“You are Chef Remy…”
+#### 🔹 Structured Output Format
 
-Constraint-Based Input
-
-Accepts:
-
-Ingredient list
-
-Dietary restriction
-
-Strict ingredient usage logic
-
-Few-Shot Learning
-
-Two structured recipe examples included in prompt
-
-Guides model output formatting
-
-Structured Output Format
-
+```
 Title:
 Prep Time:
 Ingredients Used:
 Instructions:
+```
 
-🧪 Stress Testing
+---
 
-Tested with difficult scenarios:
+## 🧪 Stress Testing
 
-Ingredients	Diet	Expected Behavior
-water, flour	None	Basic flatbread
-tomato	Vegan	Simple sautéed dish
-ice	Vegan	Graceful fallback message
-tofu, lettuce	High Protein	Creative protein-based recipe
-🎨 UI Features
+The system was tested against challenging scenarios:
 
-🌙 Premium Dark Mode
+| Ingredients   | Diet         | Expected Behavior             |
+| ------------- | ------------ | ----------------------------- |
+| water, flour  | None         | Basic flatbread               |
+| tomato        | Vegan        | Simple sautéed dish           |
+| ice           | Vegan        | Graceful fallback response    |
+| tofu, lettuce | High Protein | Creative protein-based recipe |
 
-✨ Glassmorphism recipe cards
+---
 
-🔥 Gradient action buttons
+## 🎨 UI Features
 
-🧑‍🍳 Chef-branded styling
+* 🌙 Premium dark mode interface
+* ✨ Glassmorphism-style recipe cards
+* 🔥 Gradient action buttons
+* 🧑‍🍳 Chef-themed branding
+* Clean and modern layout
 
-Clean and professional layout
+---
 
-⚙️ Tech Stack
+## ⚙️ Tech Stack
 
-Frontend: Streamlit
+* **Frontend:** Streamlit
+* **LLM:** Google Gemini 2.5 Flash
+* **Language:** Python
+* **API SDK:** google-genai
 
-LLM: Google Gemini 2.5 Flash
+---
 
-Language: Python
+## 📁 Project Structure
 
-API SDK: google-genai
-
-📁 Project Structure
+```
 AI_Personal_Chef/
 │
 ├── app.py
 ├── prompt_engine.py
 ├── requirements.txt
 └── README.md
+```
 
+---
 
-🏆 Key Learning Outcomes
+## 🏆 Key Learning Outcomes
 
-Controlling LLM hallucinations
+* Controlling LLM hallucinations
+* Designing persona-driven AI systems
+* Implementing constraint-based prompting
+* Structuring LLM outputs
+* Enhancing UX with custom UI design
+* Deploying LLM-powered applications
 
-Designing persona-driven systems
+---
 
-Implementing constraint-based prompting
+## 📜 License
 
-Structuring LLM outputs
+This project is created for educational and portfolio purposes.
 
-Improving UX with custom UI design
+---
 
-Deploying LLM applications
+## 👨‍🍳 Author
 
-
-📜 License
-
-This project is built for educational and portfolio purposes.
-
-👨‍🍳 Author
-
-Mayank Shringi
+**Mayank Shringi**
 AI & Data Science Enthusiast
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
