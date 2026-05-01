@@ -5,7 +5,9 @@ from prompt_engine import build_prompt
 # ========================
 # CONFIG
 # ========================
-API_KEY = "AIzaSyB35UTLs9Cne3F1MKObqkJXl_ZlPpQbNwI"
+import os
+
+API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_NAME = "models/gemini-2.5-flash"
 
 client = genai.Client(api_key=API_KEY)
